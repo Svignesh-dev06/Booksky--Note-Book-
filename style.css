@@ -13,22 +13,26 @@
         font-size: x-large;
         color: white;
     }
+    .popup-show-btn{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:none;
+    background-color:blue;
+    font-size:50px;
+    color:white;
 
-    .popup-show-btn {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: none;
-        margin-top: 90px;
-        margin-left: 1400px;
-        background-color: blue;
-        font-size: 70px;
-        color: white;
-    }
+    position:fixed;
+    right:20px;
+    bottom:20px;
+}
 
+   
     .content-box {
-        width: 550px;
-        min-height: 400px;
+         width:100%;
+    max-width:450px;
+    min-height:250px;
+        
         background-color: aliceblue;
         padding: 10px;
         margin: 20px;
@@ -76,20 +80,25 @@
         position: absolute;
         margin-top: 130px;
     }
+    .addbook-container{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+    justify-content:space-around;
 
-    .addbook-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        justify-content: space-around;
-        width: 50%;
-        height: 50%;
-        margin-top: 150px;
-        background-color: rgba(0, 0, 255, 0.582);
-        padding: 20px;
-        margin-left: 340px;
-    }
+    width:90%;
+    max-width:500px;
+    height:auto;
+
+    margin:auto;
+    margin-top:120px;
+
+    background-color:rgba(0,0,255,0.582);
+    padding:20px;
+    border-radius:10px;
+}
+
 
     .addbook-container input {
         width: 50%;
@@ -155,3 +164,24 @@
         gap: 20px;
         flex-wrap: wrap;
     }
+@media screen and (max-width:738px){
+
+header{
+font-size:20px;
+text-align:center;
+}
+
+.contentbox-container{
+justify-content:center;
+}
+
+.content-box{
+max-width:90%;
+}
+
+.addbook-container input,
+.addbook-container textarea{
+width:90%;
+}
+
+}
