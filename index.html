@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="d0424c93-4df8-4da4-8bd4-b410ca78e209 (1).png">
+</head>
+<body>
+    <header>
+        <h1>Booksky</h1>
+    </header>
+    <div class="contentbox-container">
+        <div class="content-box">
+            <h1>The Life of Contract & Distributions</h1>
+            <h2>Robert</h2>
+            <button class="delete-btn" onclick="deletebook(event)">Delete Book</button>
+        </div>
+    </div>
+
+    <button class="popup-show-btn" id="popup-show-btn">+</button>
+    <div class="popup-overlay" id="popup-overlay">
+
+        <div class="addbook-container">
+            <h1>Add Book</h1>
+            <input type="text" id="book-title" class="book-title" placeholder="Add Book Title">
+            <input type="text" id="book-author" class="book-author" placeholder="Add Book Author">
+            <textarea name="" id="short-description" placeholder="Details of Book....."></textarea>
+            <div class="btn-container">
+                <button id="add-btn" class="add-btn">Add</button>
+                <button id="cancel-btn" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
