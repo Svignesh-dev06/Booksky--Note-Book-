@@ -50,9 +50,7 @@
         `;
         return;
     }
-
-
-
+    
             contentboxcontainer.innerHTML = ""
             books.forEach(function (book, index) {
                 let div = document.createElement("div")
